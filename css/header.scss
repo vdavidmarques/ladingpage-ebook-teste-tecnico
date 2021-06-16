@@ -1,0 +1,49 @@
+header{   
+    
+    .button-default .btn-primary{
+        float: right;
+    }
+
+    .carousel{
+       
+        .carousel-item{
+            
+            img{
+                width: 300px;
+                height: auto;
+                object-fit: contain;
+            }
+
+            flex-direction: row-reverse;
+
+        }
+    }
+}
+
+@media (max-width: 991px){
+    header{
+
+        .container{
+            flex-wrap: wrap;
+            text-align: center;
+        }
+        .button-default .btn-primary{
+            float: left;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .carousel{
+
+            h1 strong{
+                font-size: 2.8rem;
+            }
+            .carousel-item{
+                flex-direction: row;
+                flex-wrap: wrap;
+                text-align: center;                
+            }
+        }
+
+    } 
+}
