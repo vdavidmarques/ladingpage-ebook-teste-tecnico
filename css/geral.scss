@@ -19,3 +19,10 @@ body{
     background-color: #0069D9;
 }
 
+@media (max-width: 991px){
+    section .container{
+        flex-wrap: wrap;
+        text-align: center;
+    }
+}
+

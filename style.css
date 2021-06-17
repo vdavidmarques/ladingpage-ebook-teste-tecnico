@@ -1,5 +1,5 @@
 body {
-  font-family: 'Open sans', sans-serif;
+  font-family: "Open sans", sans-serif;
   color: #484848;
 }
 
@@ -7,28 +7,39 @@ body {
   background-color: #000;
 }
 
+.bg-color-1 {
+  background-color: #80D0C7;
+}
+
+.bg-color-2 {
+  background-color: #0093E9;
+}
+
+.bg-color-3 {
+  background-color: #0069D9;
+}
+
+@media (max-width: 991px) {
+  section .container {
+    flex-wrap: wrap;
+    text-align: center;
+  }
+}
 header .button-default .btn-primary {
   float: right;
 }
-
 header .carousel .carousel-item {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
+  flex-direction: row-reverse;
 }
-
 header .carousel .carousel-item img {
   width: 300px;
   height: auto;
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 
 @media (max-width: 991px) {
   header .container {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     text-align: center;
   }
   header .button-default .btn-primary {
@@ -40,14 +51,13 @@ header .carousel .carousel-item img {
     font-size: 2.8rem;
   }
   header .carousel .carousel-item {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-direction: row;
+    flex-wrap: wrap;
     text-align: center;
   }
+}
+.meu-modal .close {
+  color: #fff;
 }
 
 .cartoes .card {
@@ -56,16 +66,25 @@ header .carousel .carousel-item img {
   border-radius: 0;
   border: 1px solid #fff;
 }
-
-.cartoes .bg-color-1 {
-  background-color: #80D0C7;
+.cartoes .card img {
+  width: 100px;
+  height: auto;
+  object-fit: contain;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.cartoes .bg-color-2 {
-  background-color: #0093E9;
+footer .balao-fixo {
+  width: 300px;
+  color: #fff;
+  float: right;
+  text-align: center;
+  margin-left: auto;
+  bottom: 100px;
+}
+footer .balao-fixo p {
+  font-size: 18px;
+  font-weight: 600;
 }
 
-.cartoes .bg-color-3 {
-  background-color: #0069D9;
-}
 /*# sourceMappingURL=style.css.map */
